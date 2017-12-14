@@ -1,7 +1,6 @@
 ext {
 
     support = "26.0.0-alpha1"
-    kotlin_version = '1.1.4-3'
 
     // ------------- Android -------------
 //            supportV4            ='com.android.support:support-v4:${dependVersion.support}"
@@ -107,7 +106,7 @@ ext {
 
     // ------------- ButterKnife -------------
     butterknife = 'com.jakewharton:butterknife:latest.release'
-//    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:latest.release'
+    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:latest.release'
 
     // ------------- 星星之间的间距 -------------
     xlhratingbar_lib = 'com.xingliuhua:xlhratingbar_lib:latest.release'
@@ -127,6 +126,9 @@ ext {
     //====================//用于解析Adobe After Effects动画========================
     lottie = 'com.airbnb.android:lottie:2.1.0'
 
+
+    //====================//umeng统计========================
+    umengAnalytics = "com.umeng.analytics:analytics:latest.integration"
 
     //====================//毛玻璃view========================
     realtimeblurview = 'com.github.mmin18:realtimeblurview:+'

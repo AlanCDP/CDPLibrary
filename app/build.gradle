@@ -31,8 +31,6 @@ configurations.all {
             }
         }
     }
-
-
 }
 
 
