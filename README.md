@@ -17,8 +17,9 @@ Step 2. Add the dependency
 	
 	
 • 在自己的gradle里 要加上以下代码 用来支持realm数据库，和防止support包冲突
-
 Plugin
+
+
     apply plugin: 'realm-android'
     
 防止support包冲突
