@@ -1,0 +1,128 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+//
+//        renderscriptTargetApi 25
+//        renderscriptSupportModeEnabled true    // Enable RS support
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0-alpha1'
+            }
+        }
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile(rootProject.ext.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.appcompatV7
+    compile rootProject.ext.design
+    testCompile rootProject.ext.junit
+    //分包错误包
+    compile rootProject.ext.multidex
+    //lambda
+    compile rootProject.ext.retrolambda
+    //轮播
+    compile rootProject.ext.rollviewpager
+    //轮播
+    compile rootProject.ext.banner
+    //沉浸状态栏
+    compile rootProject.ext.systembartint
+    //小工具
+    compile rootProject.ext.utilcode
+    //圆头像SimpleDraweeView
+    compile rootProject.ext.SimpleDraweeView
+    //回调
+    compile rootProject.ext.rxbus
+    //注解
+    compile rootProject.ext.butterknife
+    //注解附件
+//    compile rootProject.ext.butterknifeCompiler
+    //okHttp
+    compile rootProject.ext.okgo
+    //解析json
+    compile rootProject.ext.gson
+    compile rootProject.ext.fastJson
+    //崩溃dialog
+    compile rootProject.ext.customactivityoncrash
+    // dialog
+//    compile project(rootProject.ext.CommonAlertPop)
+    compile rootProject.ext.CommonAlertPop
+    compile rootProject.ext.materialdialog
+    // tableLayout
+    compile rootProject.ext.FlycoTabLayout_Lib
+    // 圆角view
+    compile rootProject.ext.FlycoRoundview_Lib
+    //加载图片
+    compile rootProject.ext.glide
+    annotationProcessor  rootProject.ext.glideCompiler
+    compile rootProject.ext.ImagePicker
+    compile rootProject.ext.gif
+    compile rootProject.ext.circleimageview
+//    compile rootProject.ext.photoView
+    //上下滑动选择器
+    compile rootProject.ext.pickerview
+    // recyclerView adapter封装类
+    compile rootProject.ext.BaseRecyclerViewAdapterHelper
+    //权限申请
+//    compile rootProject.ext.permission
+    compile rootProject.ext.permissionsdispatcher
+    annotationProcessor rootProject.ext.permissionsdispatcherProcessor
+    //画板
+    compile rootProject.ext.AndroidDrawingView
+    //带header的viewpager
+    compile rootProject.ext.scrollable
+    //通用popWindow
+    compile rootProject.ext.BasePopup
+    //星星之间的间距
+    compile rootProject.ext.xlhratingbar_lib
+    //类似相对布局
+    compile rootProject.ext.constraintlayout
+    //webView
+    compile rootProject.ext.AdvancedWebView
+//    侧滑删除
+    compile rootProject.ext.SwipeDelMenuLayout
+//    俗名：垂直跑马灯学名：垂直翻页公告
+    compile rootProject.ext.marqueeview
+//    产品标签
+    compile rootProject.ext.flowlayout
+//    圆圈加数字指示
+    compile rootProject.ext.circleNum
+//    HTML Parser html解析
+    compile rootProject.ext.jsoup
+//    用于解析Adobe After Effects动画
+    compile rootProject.ext.lottie
+//    毛玻璃view
+    compile rootProject.ext.realtimeblurview
+//    毛玻璃view
+    compile rootProject.ext.SmartRefreshLayout
+
+
+}
+repositories {
+    mavenCentral()
+}
