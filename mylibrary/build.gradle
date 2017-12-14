@@ -15,6 +15,7 @@ android {
         multiDexEnabled true
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
+        
 //
 //        renderscriptTargetApi 25
 //        renderscriptSupportModeEnabled true    // Enable RS support
