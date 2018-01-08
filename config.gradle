@@ -51,7 +51,7 @@ ext {
     utilcode = 'com.blankj:utilcode:latest.release'
 
     // ------------- 圆头像SimpleDraweeView -------------
-    SimpleDraweeView = 'com.facebook.fresco:fresco:latest.release'
+    SimpleDraweeView = 'com.facebook.fresco:fresco:0.11.0'
 
     // ------------- 崩溃dialog -------------
     customactivityoncrash = 'cat.ereza:customactivityoncrash:latest.release'
