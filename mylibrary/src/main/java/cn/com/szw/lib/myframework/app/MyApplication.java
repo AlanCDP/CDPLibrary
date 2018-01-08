@@ -25,7 +25,6 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.X509TrustManager;
 
 import cn.com.szw.lib.myframework.entities.AbsUser;
-import io.realm.Realm;
 import okhttp3.OkHttpClient;
 
 /**
@@ -47,7 +46,6 @@ public abstract class MyApplication extends MultiDexApplication implements AbsAp
         salt=getSalt();
         Fresco.initialize(this);
         Utils.init(this);
-        Realm.init(this);
         spUtils= SPUtils.getInstance(getPackageName());
         initOkGo();
         //Install  程序崩溃日志初始化
