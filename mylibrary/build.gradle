@@ -4,11 +4,11 @@ apply plugin: 'realm-android'
 //apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'io.fabric'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '26.0.2'
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -64,7 +64,7 @@ dependencies {
     //注解
     compile rootProject.ext.butterknife
     //注解附件
-//    compile rootProject.ext.butterknifeCompiler
+    annotationProcessor rootProject.ext.butterknifeCompiler
     //okHttp
     compile rootProject.ext.okgo
     //解析json
