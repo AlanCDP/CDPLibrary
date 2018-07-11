@@ -92,7 +92,7 @@ dependencies {
     compile rootProject.ext.BaseRecyclerViewAdapterHelper
     //权限申请
 //    compile rootProject.ext.permission
-    compile rootProject.ext.permissionsdispatcher
+    implementation rootProject.ext.permissionsdispatcher
     annotationProcessor rootProject.ext.permissionsdispatcherProcessor
     //画板
     compile rootProject.ext.AndroidDrawingView
