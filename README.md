@@ -11,7 +11,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	         compile 'com.github.AlanCDP:CDPLibrary:1.0.2'
+	         compile 'com.github.AlanCDP:CDPLibrary:2.0.1'
 	}compile
 	
 	
