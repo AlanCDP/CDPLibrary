@@ -48,7 +48,7 @@ ext {
     systembartint = 'com.readystatesoftware.systembartint:systembartint:latest.release'
 
     // ------------- 小工具 -------------
-    utilcode = 'com.blankj:utilcode:1.19.2'
+    utilcode = 'com.blankj:utilcode:1.19.0'
 
     // ------------- 圆头像SimpleDraweeView -------------
     SimpleDraweeView = 'com.facebook.fresco:fresco:0.11.0'
