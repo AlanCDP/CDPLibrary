@@ -68,7 +68,7 @@ ext {
     FlycoRoundview_Lib = 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
 
     // ------------- recyclerView adapter封装类 -------------
-    BaseRecyclerViewAdapterHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:latest.release'
+    BaseRecyclerViewAdapterHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
 
     // ------------- 上下滑动选择器 -------------
 //            AndroidPicker        :'cn.qqtheme.framework:AndroidPicker:latest.integration'
