@@ -119,8 +119,6 @@ dependencies {
 //    用于解析Adobe After Effects动画
     compile rootProject.ext.lottie
 //    毛玻璃view
-    compile rootProject.ext.realtimeblurview
-//    毛玻璃view
     compile rootProject.ext.SmartRefreshLayout
 
 
