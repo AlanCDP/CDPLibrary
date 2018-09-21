@@ -130,9 +130,6 @@ ext {
     //====================//umeng统计========================
     umengAnalytics = "com.umeng.analytics:analytics:latest.integration"
 
-    //====================//毛玻璃view========================
-    realtimeblurview = 'com.github.mmin18:realtimeblurview:+'
-
     //====================//上下拉刷新========================
     SmartRefreshLayout = 'com.scwang.smartrefresh:SmartRefreshLayout:+'
 
