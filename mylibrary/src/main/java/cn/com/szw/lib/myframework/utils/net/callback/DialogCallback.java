@@ -27,16 +27,15 @@ public abstract class DialogCallback<T extends NetEntity> extends JsonCallback<T
     private Context context;
 
 
-
     public DialogCallback(Context context) {
         super();
-        this.context =context;
+        this.context = context;
     }
 
     @Override
     public void onStart(Request<T, ? extends Request> request) {
         super.onStart(request);
-        CustomProgress.show(context,"加载中",false,null);
+        CustomProgress.show(context, "加载中", true, null);
     }
 
     @Override
@@ -52,7 +51,7 @@ public abstract class DialogCallback<T extends NetEntity> extends JsonCallback<T
         Call call = response.getRawCall();
         if (call != null) {
             Throwable e = response.getException();
-            if (e!=null) {
+            if (e != null) {
                 if (e instanceof UnknownHostException) {
                     Toast.makeText(context, "网络未连接，请打开网络后再次尝试。", Toast.LENGTH_SHORT).show();
                 }
