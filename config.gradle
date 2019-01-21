@@ -33,7 +33,7 @@ ext {
     scrollable = 'ru.noties:scrollable:latest.release'
 
     // ------------- 画板 -------------
-    AndroidDrawingView = 'com.github.vilyever:AndroidDrawingView:1.6.7'
+    AndroidDrawingView = 'com.github.vilyever:AndroidDrawingView:latest.release'
 
     // ------------- 权限申请 -------------
 //            permission='com.yanzhenjie:permission:latest.release'
