@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'io.fabric'
 android {
     compileSdkVersion 27
     buildToolsVersion '26.0.2'
@@ -91,6 +94,8 @@ dependencies {
 //    compile rootProject.ext.permission
     implementation rootProject.ext.permissionsdispatcher
     annotationProcessor rootProject.ext.permissionsdispatcherProcessor
+    //画板
+    compile rootProject.ext.AndroidDrawingView
     //带header的viewpager
     compile rootProject.ext.scrollable
     //通用popWindow
