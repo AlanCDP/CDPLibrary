@@ -54,7 +54,7 @@ ext {
     SimpleDraweeView = 'com.facebook.fresco:fresco:0.11.0'
 
     // ------------- 崩溃dialog -------------
-    customactivityoncrash = 'cat.ereza:customactivityoncrash:latest.release'
+//    customactivityoncrash = 'cat.ereza:customactivityoncrash:latest.release'
 
     // ------------- dialog -------------
 //            CommonAlertPop=':CommonAlertPop'
